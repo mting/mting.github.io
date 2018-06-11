@@ -19,17 +19,16 @@ ul, li,  h1, h2, h3, p {
 
 * {
 	box-sizing: border-box;
-  font-family: 'Playfair Display', serif;
-  color: #4D4D48;
+
 }
 
-html {
-	background-color: #43EAE3;
-}
 
 body {
 	margin:0;
 }
+
+body.home { background-color:#43EAE3 }
+body.casestudies { background-color: #CB2D6F;}
 
 
 header {
@@ -41,7 +40,7 @@ header {
 	
 	width: 100%;
   
-	background-color: #FCFC00;
+	background-color: #0F292F;
 }
 
 nav {
@@ -195,6 +194,11 @@ footer {
 
 
 /* typography */
+h1,h2, p {
+  font-family: 'Playfair Display', serif;
+  color: #4D4D48;
+}
+
  h1 {
 	font-size: 40px;
   line-height: 28px;
@@ -202,6 +206,10 @@ footer {
 
 h1 a {
   text-decoration: none;
+}
+
+header h1, header h1 a {
+  color: #efefef;
 }
 
 header h2 {
