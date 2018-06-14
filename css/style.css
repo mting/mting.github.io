@@ -9,6 +9,8 @@ ul, li,  h1, h2, h3, p {
 	list-style: none;
 }
 
+img {width:100%;}
+
 .center {
   display: flex;
   flex-direction: column;
@@ -19,9 +21,7 @@ ul, li,  h1, h2, h3, p {
 
 * {
 	box-sizing: border-box;
-
 }
-
 
 body {
 	margin:0;
@@ -78,6 +78,8 @@ nav ul li a {
   font-size: 22px;
    
   margin-top: 20px;
+  
+  color: #efefef;
 }
 
 /* nav ul li a:hover {
@@ -99,13 +101,14 @@ section {
   padding: 200px 0px; 
 }
 
+/*   --------------------------   Home Page  ------------------------------------ */
+
+
 section#slider {
   background: url(../images/slider.jpg) no-repeat;
   background-size: cover;
 	background-position: center;
-  
   opacity: 0.5;
-  
 }
 
 
@@ -113,7 +116,6 @@ section#projects {
 	justify-content:flex-start;
 	align-items:center;
 }
-
 
 
 section#about {
@@ -126,9 +128,6 @@ section#about {
 #about h1 {
   margin-bottom: 60px;
 }
-
-
-
 
 
  /*----------contact--------*/
@@ -181,6 +180,163 @@ section#contact {
   color: #f40cee;
 }
 
+
+
+
+/*   --------------------------   Case Study  ------------------------------------ */
+
+body.trumpet section.casestudySlider {
+  background: url(../images/trumpet/thetrumpet.jpg) no-repeat;
+  background-size: cover;
+	background-position: center;
+  opacity: 0.5;
+}
+
+nav.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  height: 100px;
+}
+
+nav.pagination a{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+h3 span {
+  font-size: 50px;
+}
+
+.casestudies main {
+  background: #fff;
+}
+
+.casestudies section{
+  min-height: 50vh;
+  padding: 5% 15%;
+}
+
+.casestudies section.solution {
+  padding: 5% 0;
+}
+
+.casestudies section:nth-child(odd){
+  background-color:#f9f7f9;
+}
+
+.sectionContainer {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  
+  margin-bottom: 200px;
+}
+
+.sectionContainer:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.description {
+  width: 30%;
+}
+
+.imageContainer {
+  width: 60%;
+}
+
+.casestudies main img {
+  border: 2px solid #f9f7f9;
+}
+
+.casestudies .gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.casestudies .gallery li {
+  width:19%; 
+  max-height:1050px;
+  overflow: hidden;
+  margin:0 1% 1% 0;
+}
+
+.solution a{
+  text-align: center;
+  margin: 0 auto;
+  
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  
+  display: block;
+  width: 400px;
+  height: 100px;
+  padding: 30px;
+  
+  border: 3px solid #CB2D6F;
+}
+
+.solution a:hover {
+  background-color: #CB2D6F;
+  color: #fff;
+}
+
+.casestudies h2 { 
+  margin-bottom: 140px; 
+  font-size: 80px;
+  text-align: center;
+}
+
+.casestudies .concept h2 {margin-bottom:40px;}
+
+.casestudies .casestudySlider h3 {
+  color: #FCFC00;
+  font-size: 200px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.casestudies h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 300;
+  
+  margin-bottom: 20px;
+}
+
+h3.noMargin {
+  margin-bottom:0 ;
+}
+
+h3.role {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.casestudies p {
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  
+  font-size: 32px;
+}
+
+p.statement {
+  font-size: 42px;
+}
+
+
+
+section#research, section#solution {
+  background-color: #fefefe;
+}
+
+
+
 footer {
   background-color: #58A08A;
   
@@ -194,12 +350,15 @@ footer {
 
 
 /* typography */
-h1,h2, p {
+h1, h2, p, a {
   font-family: 'Playfair Display', serif;
   color: #4D4D48;
 }
 
- h1 {
+p {font-family: sans-serif;}
+
+
+h1 {
 	font-size: 40px;
   line-height: 28px;
 }
@@ -212,7 +371,7 @@ header h1, header h1 a {
   color: #efefef;
 }
 
-header h2 {
+h2 {
   font-size: 28px;
 }
 
