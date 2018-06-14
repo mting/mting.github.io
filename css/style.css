@@ -227,6 +227,10 @@ h3 span {
   padding: 5% 15%;
 }
 
+.casestudies section.casestudySlider {
+  padding-top: 150px;
+}
+
 .casestudies section.solution {
   padding: 5% 0;
 }
