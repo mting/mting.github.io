@@ -105,7 +105,7 @@ section {
 	justify-content: center;
 	align-items: center;
   
-  padding: 200px 0px; 
+  padding: 100px 0px; 
 }
 
 /*   --------------------------   Home Page  ------------------------------------ */
@@ -116,6 +116,7 @@ section#slider {
   background-size: cover;
 	background-position: center;
   opacity: 0.5;
+  padding-top: 200px;
 }
 
 
@@ -153,21 +154,21 @@ section#contact {
 }
 
 .contactGetIn{
-  max-width: 720px;
-  height: 720px;
+  max-width: 500px;
+  height: 500px;
   background: #96FCD8;
-  padding: 150px;
+  padding: 100px;
   
 }
 
 
 .contactForm {
   display: block;
-  width: 720px;
-  height: 720px;
+  width: 500px;
+  height: 500px;
   background: #D8EDE6;
   
-  padding: 150px;
+  padding: 100px;
 }
 
 #contact ul li {
@@ -369,7 +370,7 @@ p {font-family: sans-serif;}
 
 
 h1 {
-	font-size: 22px;
+	font-size: 26px;
   line-height: 28px;
 }
 
@@ -378,6 +379,7 @@ h1 a {
 }
 
 header h1, header h1 a {
+  font-size: 22px;
   color: #efefef;
 }
 
@@ -392,14 +394,14 @@ h2 {
 }
 
 #contact p {
-  font-size: 28px;
+  font-size: 18px;
   line-height: 1.5;
   margin-bottom: 50px;
 }
 
 #contact address p {
   font-family: sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.3;
 }
 
