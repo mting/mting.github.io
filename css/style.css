@@ -201,6 +201,17 @@ body.trumpet section.casestudySlider {
   opacity: 0.5;
 }
 
+body.atm section.casestudySlider {
+  background: url(../images/atm/atm.jpg) no-repeat;
+  background-size: cover;
+	background-position: center;
+  opacity: 0.5;
+}
+
+
+
+body.trumpet section.casestudySlider
+
 nav.pagination {
   display: flex;
   justify-content: space-between;
@@ -252,7 +263,7 @@ h3 span {
 }
 
 .description {
-  width: 30%;
+  width: 35%;
 }
 
 .imageContainer {
@@ -273,6 +284,21 @@ h3 span {
   overflow: hidden;
   margin:0 1% 1% 0;
 }
+
+ul.bullets {
+  margin-bottom: 20px;
+}
+
+ul.bullets li {
+  font-family: "Roboto", sans-serif;
+  color: #4D4D48;
+  font-size: 18px;
+  font-weight: 300;
+  list-style:disc;
+  margin-left: 20px;
+  line-height: 1.5;
+}
+
 
 .cta_btn {
   text-decoration: none;
@@ -319,7 +345,7 @@ h3 span {
   margin-bottom: 30px;
   font-weight: 700;
   font-family: 'Roboto Condensed', sans-serif;
-  letter-spacing: 2;
+  letter-spacing: 0.16em;
 }
 
 .casestudies h3 {
@@ -346,6 +372,7 @@ h3.role {
   font-weight: 300;
   
   font-size: 20px;
+  margin-bottom: 20px;
 }
 
 p.statement {
