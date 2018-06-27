@@ -9,13 +9,20 @@ ul, li,  h1, h2, h3, p {
 	list-style: none;
 }
 
-img {width:100%;}
+img {
+  width:100%;
+  display: block;
+}
 
 .center {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.marginBottom {
+  margin-bottom: 30px;
 }
 
 
@@ -89,6 +96,8 @@ nav ul li a {
   color: #efefef;
 }
 
+
+
 /* nav ul li a:hover {
   background-color: bisque;
 } */
@@ -108,6 +117,8 @@ section {
   padding: 100px 0px; 
 }
 
+
+
 /*   --------------------------   Home Page  ------------------------------------ */
 
 
@@ -123,6 +134,7 @@ section#slider {
 section#projects {
 	justify-content:flex-start;
 	align-items:center;
+  background-color: #fff;
 }
 
 
@@ -138,6 +150,40 @@ section#about {
   text-align: center;
 }
 
+input, textarea {
+  text-transform: uppercase;
+  background: none;
+  margin-bottom: 20px;
+  border: 1px solid grey;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.right {
+  margin: none;
+  float: right;
+}
+
+.input {
+  width: 300px;
+  height: 40px;
+}
+
+.message {
+  width: 300px;
+  height: 100px;
+}
+
+/*Gallery*/
+
+.gallery_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery_list li {
+  width: 33.333%;
+}
 
  /*----------contact--------*/
 
@@ -145,7 +191,7 @@ section#contact {
   background: #fff;
 }
 
-.contactWrapper {
+.wrapper {
   max-width: 1440px;
   display: flex;
   
@@ -158,7 +204,6 @@ section#contact {
   height: 500px;
   background: #96FCD8;
   padding: 100px;
-  
 }
 
 
