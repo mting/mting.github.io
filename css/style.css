@@ -78,6 +78,19 @@ nav {
   margin-right: 5px;
 }
 
+.decoration {
+  display: block;
+  width: 40px;
+  height:3px;
+  
+  margin: 8px 0 30px;
+  
+  background-color: #4D4D48;
+  
+  left:50%;
+  right:50%;
+}
+
 
 nav ul {
 	display:flex;
@@ -136,6 +149,14 @@ section#projects {
 	justify-content:flex-start;
 	align-items:center;
   background-color: #fff;
+  
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+section#projects h3 { 
+  font-size: 22px;
 }
 
 
@@ -214,6 +235,9 @@ input, textarea {
   text-align: center;
   border: 2px solid white;
   padding: 20px;
+  
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 .light_green .project_name, 
