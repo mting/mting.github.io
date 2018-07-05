@@ -15,6 +15,8 @@ img {
   display: block;
 }
 
+img.small {width: 50%;}
+
 .center {
   display: flex;
   flex-direction: column;
@@ -26,9 +28,12 @@ img {
   margin-bottom: 30px;
 }
 
-
 * {
 	box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -38,7 +43,7 @@ body {
 body.home { background-color:#43EAE3 }
 body.trumpet { background-color: #CB2D6F;}
 body.atm {background-color: #69B29C;}
-body.fendi {background-color: #96FCD8;}
+body.findyourf {background-color: #96FCD8;}
 body.giworks {background-color: #CB2D6F;}
 body.shorttAndEpic {background-color: #43EAE3;}
 body.rioazul {background-color: #D8EDE6;}
@@ -83,7 +88,8 @@ nav {
   width: 40px;
   height:3px;
   
-  margin: 8px 0 30px;
+  margin: 8px auto 30px auto;
+  text-align: center;
   
   background-color: #4D4D48;
   
@@ -109,8 +115,6 @@ nav ul li a {
   
   color: #efefef;
 }
-
-
 
 /* nav ul li a:hover {
   background-color: bisque;
@@ -152,7 +156,6 @@ section#projects {
   
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  text-transform: uppercase;
 }
 
 section#projects h3 { 
@@ -167,10 +170,6 @@ section#about {
   padding-left: 20%;
 }
 
-#about h1 {
-  margin-bottom: 60px;
-  text-align: center;
-}
 
 input, textarea {
   text-transform: uppercase;
@@ -279,7 +278,7 @@ section#contact {
 
 .contactForm {
   display: block;
-  width: 500px;
+  max-width: 500px;
   height: 500px;
   background: #D8EDE6;
   
@@ -323,6 +322,15 @@ body.atm section.casestudySlider {
   opacity: 0.5;
 }
 
+body.findyourf section.casestudySlider {
+  background: url(../images/findyourf/findyourf.jpg) no-repeat;
+  background-size: cover;
+	background-position: center;
+  opacity: 0.5;
+}
+
+
+
 
 
 body.trumpet section.casestudySlider
@@ -333,11 +341,16 @@ nav.pagination {
   align-items: center;
   
   height: 55px;
+  
 }
 
 nav.pagination a{
   text-decoration: none;
   color: aliceblue;
+}
+
+nav.pagination h3 {
+  color: white;
 }
 
 h3 span {
@@ -370,7 +383,7 @@ h3 span {
   justify-content: space-between;
   height: auto;
   
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .sectionContainer:nth-child(odd) {
@@ -430,6 +443,7 @@ ul.bullets li {
   height: 60px;
   padding: 20px;
   
+  
   border: 3px solid #CB2D6F;
 }
 
@@ -440,6 +454,9 @@ ul.bullets li {
 .cta_btn:hover {
   background-color: #CB2D6F;
   color: #fff;
+  
+  transition-duration: 0.3s;
+
 }
 
 .casestudies h2 { 
@@ -449,7 +466,6 @@ ul.bullets li {
   font-size: 38px;
   font-style: italic;
   font-weight: 300;
-  
 }
 
 .casestudies .concept h2 {margin-bottom:40px;}
@@ -468,6 +484,7 @@ ul.bullets li {
   font-size: 22px;
   text-transform: uppercase;
   font-weight: 300;
+  text-align: left;
   
   margin-bottom: 20px;
 }
@@ -538,6 +555,14 @@ h2, h3 {
   font-size: 28px;
 }
 
+h3 {
+  font-family: "Playfair Display", Georgia, sans-serif;
+  color: #4D4D48;
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+
 #about p {
   font-size: 28px;
   line-height: 1.5;
@@ -580,6 +605,7 @@ h2, h3 {
   position: relative;
   overflow: hidden;
 }
+
 .hvr-underline-from-center:before {
   content: "";
   position: absolute;
@@ -604,10 +630,6 @@ h2, h3 {
 
 /* media screens  */
 @media screen and (max-width: 980px) {
-    #about p {
-    font-size: 42px;
-    line-height: 1.5;
-  }
   
   #slider h3 {
     font-size: 90px;
@@ -620,19 +642,69 @@ h2, h3 {
 
 @media screen and (max-width: 600px) {
     #about p {
-    font-size: 38px;
+    font-size: 24px;
     line-height: 1.5;
+  }
+  
+  section {
+    padding: 50px 0;
   }
   
   #contact div{
     max-width: 400px;
 }
-   #slider h3 {
+  #slider h3 {
     font-size: 90px;
   }
   #skills h3 {
     font-size: 52px;
   }
+  
+  .gallery_list_container {
+    width: 50%;
+  }
+  
+  /* Contact section */
+  .wrapper, .sectionContainer {
+    flex-direction: column;
+  }
+  .contactGetIn, .contactForm {
+    height: 400px;
+    padding: 50px;
+  }
+
+  .casestudies section {
+    padding: 5%;
+  }
+  
+  .sectionContainer:nth-child(odd) {
+    flex-direction: column;
+  }
+  
+  .description, .imageContainer {
+    width: 100%;
+  }
+  
+  .imageContainer {
+    order: -2;
+    margin-bottom: 30px;
+  }
+  
+  .casestudies h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+  
+  .casestudies .casestudySlider h3 {font-size: 50px;}
+  
+  .casestudies h3 {
+    font-size: 20px;
+  }
+  
+  .casestudies p {
+    font-size: 18px;
+  }
+  
 }
 
 
