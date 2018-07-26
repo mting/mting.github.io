@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Personal Description of Miranda Ting</title>
+	<title>Miranda Ting | Interactive Designer</title>
 	<meta name="description" content="Introduction of Miranda Ting, Interactive Designer">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,700|Playfair+Display:400,700,700i" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body id="top" class="home">
@@ -14,10 +15,11 @@
 	<header>
     <nav>
       <div class="logo">
-        <img src="images/logo.svg" class="imgLogo" alt="logo.">
-        <h1><a href="#slider">Miranda Ting</a></h1>
+        <a href="index.html#slider"><img src="images/logo.svg" class="imgLogo" alt="logo."></a>
+        <a href="index.html#slider"><h1>Miranda Ting</h1></a>
+        <!-- <div class="fa fa-bars" style="font-size:24px"></div> -->
       </div>
-      <ul>
+      <ul class="main_nav">
         <li><a href="index.html#projects" class="hvr-underline-from-center">Case Studies</a></li>
         <li><a href="index.html#about" class ="hvr-underline-from-center">Who am I</a></li>
         <li><a href="index.html#contact" class="hvr-underline-from-center">Contact Me</a></li>
@@ -41,52 +43,53 @@
       <div class="decoration"></div>
       
       <div class="wrapper">
-        <div class="gallery_list">
-        
+       <div class="gallery_list">
+                
          <a  href="casestudies-atm.html" class="gallery_list_container">
            <img src="images/home/atm-home.jpg" alt="ATM Mobile App.">
            <div class="overlay green">
              <h4 class="project_name">ATM App</h4>
            </div>
          </a>
-         
+
          <a href="casestudies-trumpet.html" class="gallery_list_container">
            <img src="images/home/trumpet-home.jpg" alt="The Trumpet.">
            <div class="overlay pink">
              <h4 class="project_name">The Trumpet</h4>
            </div>
          </a>
-         
+
           <a href="casestudies-findyourf.html" class="gallery_list_container">
            <img src="images/home/fendi-home.jpg" alt="Find Your F.">
            <div class="overlay light_green">
              <h4 class="project_name">Find Your F</h4>
            </div>
          </a>
-         
-         <a href="#" class="gallery_list_container">
+        
+         <a href="casestudies-giworks.html" class="gallery_list_container">
            <img src="images/home/giworks-home.jpg" alt="Granville Island Works.">
            <div class="overlay pink">
              <h4 class="project_name">Granville Island Works</h4>
            </div>
          </a>
-         
-         <a href="#" class="gallery_list_container">
+        
+         <a href="casestudies-pirs.html" class="gallery_list_container">
            <img src="images/home/pirs-home.jpg" alt="Pacific Immigrant Resources Society.">
            <div class="overlay blue">
              <h4 class="project_name">PIRS</h4>
            </div>
          </a>
-         
-         <a href="#" class="gallery_list_container">
+
+         <a href="casestudies-shortt.html" class="gallery_list_container">
            <img src="images/home/shortt-home.jpg" alt="Shortt and Epic Productions.">
            <div class="overlay sage">
              <h4 class="project_name">Shortt & Epic Productions</h4>
            </div>
          </a>
-        
-        </div>
+                
+        </div> 
       </div>
+    
     
 		</section>
   <main>
@@ -109,7 +112,7 @@
 			  <article class="contactGetIn">
           <div class="contactWrapperContainer">
             <h2>Get in Touch</h2>
-              <div class="decoration"></div>
+              <div class="decoration leftMargin"></div>
               <p>Lets collaborate and make a better community together. </p>
              
               <ul class="social">
@@ -122,13 +125,14 @@
 				  </article>
 				<article class="contactForm">
            <div class="contactWrapperContainer">
-             <form>
+             <form action="https://formspree.io/mirn.ting@gmail.com" method="POST">
               
               <input type="text" name="name" class="input" value="Name">
-              <input type="text" name="email" class="input" value="Email">
+              <input type="email" name="_replyto" class="input" value="Email">
               <textarea name="message" class="message" value="Message">Tell me your ideas</textarea> <br>
-              <a href="" class="cta_btn right" >Send Message</a>
+              <input type="submit" value="send" class="cta_btn right">
             </form>
+
            </div>
         </article>
 			</div>
